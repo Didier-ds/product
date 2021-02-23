@@ -62,6 +62,10 @@ nav a {
     font-family: 'Work Sans', sans-serif;
     color:#FF5678;
 }
+.link {
+    position: relative;
+    right: 55px;
+}
 .copyright {
     background-color: #FF5678;
     text-align: center;
