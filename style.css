@@ -88,7 +88,21 @@ nav a {
 .dirt {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
+}
+.road {
+    width: 39%;
+    margin: 10px;
+}
+
+.work {
+    width:80%
+}
+ .point {
+     margin-top: 50px;
+ }
+.road img, .work img {
+   width: 100%;
 }
 .cubev {
     flex: 0 0 33.333333%;
@@ -99,15 +113,7 @@ nav a {
     box-shadow: 0px 0px 6px -4px;
 }
 
-.road {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: auto auto;
-    grid-gap: 20px 40px;
-    padding: 30px;
 
-}
 .first {
     width: 50%;
     
