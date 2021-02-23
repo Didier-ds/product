@@ -127,12 +127,15 @@ nav a {
     float: right;
 }
 .dir {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
    justify-content: center;
   align-content:center;
-  grid-template-columns: auto auto auto;
-  grid-gap: 40px 150px;
-  padding: 10px;
+  
+}
+.cube  {
+    width: 26%;
+    margin: 10px;
 }
 .dir>.cube p{
     margin: 0px;
