@@ -60,6 +60,7 @@ nav ul li {
 nav a {
     text-decoration: none !important;
     font-family: 'Work Sans', sans-serif;
+    color:#FF5678;
 }
 .copyright {
     background-color: #FF5678;
