@@ -1,7 +1,7 @@
 body {
     padding-right: 15px;
     padding-left: 15px;
-    margin: 0px;
+    margin: 0;
 }
 
 li {
@@ -9,6 +9,7 @@ li {
 }
 .main {
     display: flex;
+   
     justify-content: center;
 }
 .second {
@@ -19,18 +20,21 @@ li {
     display: block;
 }
 .link ul {
-    padding: 0px;
+    padding: 0;
     position: relative;
     right: 15px;
 }
 nav {
     height: 70px;
+    display: flex;
+    justify-content: space-between;
     padding-top: 15px;
     margin-bottom: 50px;
 }
 .logo {
     line-height: 40px;
     font-size: 40px;
+    
     margin-left: 120px;
     font-weight: bold;
     font-family: 'Work Sans', sans-serif;
@@ -58,7 +62,7 @@ nav ul {
     margin-right: 90px;
 }
 nav ul li {
-    margin: 0px 20px;
+    margin: 020px;
 }
 nav a {
     text-decoration: none !important;
@@ -74,18 +78,18 @@ nav a {
     text-align: center;
 }
 .copyright p {
-    padding: 20px 0px;
+    padding: 20px 0;
     color: white;
-    font-size: 20x;
+    font-size: 20px;
 }
 .conn {
-    padding: 0px 200px 0px 10px;
+    padding: 0 200px 0 10px;
 }
 .mar {
    position: relative;
    top: 25px;
 }
-.dirt {
+.skillset {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -104,19 +108,22 @@ nav a {
 .road img, .work img {
    width: 100%;
 }
-.cubev {
-    flex: 0 0 33.333333%;
+.skillset-list {
+    
+    flex-basis: 250px;
+   
+    word-break: keep-all;
+    
+    flex: 0 1 auto;
     padding: 10px 20px 3px;
-    max-width: 20.333%;
-    margin: 20px 60px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 6px -4px;
+    max-width: 250px;
+    margin: 20px 2.5rem;
+    box-shadow: 0 0 6px -4px;
 }
 
 
 .first {
     width: 50%;
-    
     box-sizing: border-box;
 }
 
@@ -125,26 +132,27 @@ nav a {
     top: 20px;
 }
 .plain {
-    padding: 0px;
+    padding: 0;
 }
 .second p {
     position: relative;
     top: 60px;
     float: right;
 }
-.dir {
+.experience {
     display: flex;
     flex-wrap: wrap;
    justify-content: center;
-  align-content:center;
+ 
   
 }
-.cube  {
-    width: 26%;
+.time  {
+    width: 300px;
+    box-sizing: border-box;
     margin: 10px;
 }
-.dir>.cube p{
-    margin: 0px;
+.experience>.time p{
+    margin: 0;
 }
 .bold {
     font-weight: 600;
@@ -157,16 +165,19 @@ nav a {
     top: 4px;
     padding: 3px 20px
 }
-h3 {
-    font-family: ;
+h3, h1 {
+    
     font-weight: bold;
-    font-size: 45px;
-    margin-bottom: 0px;
+    font-size: 2.4rem;
+    margin-bottom: 0;
     font-family: 'Work Sans', sans-serif
 }
 p {
-    margin-top: 0px;;
+    margin-top: 0;;
     font-family: 'Work Sans', sans-serif;
+}
+.box p {
+    max-width: 550px;
 }
 .say {
     background: #FF5678;
@@ -180,7 +191,7 @@ p {
     top:6px;
 }
 .space {
-    padding:0px 10px;
+    padding:0 10px;
     width: 20px;
 }
 .section {
@@ -188,9 +199,30 @@ p {
     justify-content: center;
     margin-bottom: 50px;
 }
-.sec {
+.main-bottom {
     margin-bottom: 180px;
 }
 .pink {
     color:#FF5678;
+}
+
+.box:nth-child(1) {
+    width: 600px;
+}
+.box:nth-child(2) {
+    width: 400px;
+}
+/* @media (max-width: 968px){
+   
+   /* .main {
+       flex-wrap: wrap;
+   } 
+} */
+@media(max-width: 930px){
+    .box:nth-child(1){
+        order:1;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
 }
